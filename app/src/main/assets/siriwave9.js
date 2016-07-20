@@ -77,12 +77,12 @@ function SiriWave9(opt) {
 	this.tick = 0;
 	this.run = false;
 
-	// UI vars
-
 	this.ratio = opt.ratio || window.devicePixelRatio || 1;
 
-	this.width = this.ratio * (opt.width || 320);
+    this.width =  opt.width || 320;
+	//this.width = this.ratio * (opt.width || 320);
 	this.height = this.ratio * (opt.height || 100);
+
 	this.MAX = this.height/2;
 
 	this.speed = 0.1;
@@ -189,6 +189,17 @@ SiriWave9.prototype.stop = function() {
 	this.run = false;
 };
 
+SiriWave9.prototype.setWidth = function(v) {
+    this.width = v || 320;
+	//this.width = this.ratio * (v || 320);
+	this.canvas.width = this.width;
+	this.canvas.style.width = (this.width / this.ratio) + 'px';
+
+	console.log('this.width: ' + this.width);
+	console.log('this.canvas.width: ' + this.canvas.width);
+	console.log('this.canvas.style.width: ' + this.canvas.style.width);
+};
+
 SiriWave9.prototype.setSpeed = function(v, increment) {
 	this._interpolation.speed = v;
 };
@@ -198,9 +209,10 @@ SiriWave9.prototype.setNoise = SiriWave9.prototype.setAmplitude = function(v) {
 };
 
 SiriWave9.prototype.COLORS = [
-[32,133,252],
-[94,252,169],
-[253,71,103]
+[66,133,244],
+[234,67,53],
+[251,188,5],
+[52,168,83]
 ];
 
 if (typeof define === 'function' && define.amd) {

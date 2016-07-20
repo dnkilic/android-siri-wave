@@ -49,6 +49,18 @@
             android:text="-Speed"
             android:onClick="decreaseSpeed" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+Width"
+            android:onClick="increaseWidth"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Width"
+            android:onClick="decreaseWidth" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -79,6 +91,7 @@
         <WebView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:id="@+id/webView" />
 
     </LinearLayout>
