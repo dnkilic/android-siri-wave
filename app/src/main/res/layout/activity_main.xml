@@ -14,45 +14,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.6"
+        android:layout_weight="3"
         android:orientation="vertical">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DECREASE"
-            android:onClick="decrease" />
+            android:text="End Speech"
+            android:onClick="endSpeech" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INCREASE"
-            android:onClick="increase"/>
+            android:text="Start Speech"
+            android:onClick="startSpeech"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MINIMIZE"
-            android:onClick="minimize"/>
+            android:text="Pause Speech"
+            android:onClick="pauseSpeech"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stop"
-            android:onClick="stop"/>
+            android:text="Reset"
+            android:onClick="reset"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Start"
             android:onClick="start"/>
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:gravity="center">
+
         <com.dnkilic.waveform.WaveView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,4 +61,5 @@
             android:id="@+id/vw2">
         </com.dnkilic.waveform.WaveView>
     </LinearLayout>
+
 </LinearLayout>

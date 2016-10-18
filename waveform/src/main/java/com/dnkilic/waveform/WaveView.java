@@ -37,13 +37,12 @@ public class WaveView extends WebView {
         webSetting.setLoadWithOverviewMode(true);
     }
 
-    public void startWaveform(DisplayMetrics dm)
-    {
+    public void initialize(DisplayMetrics dm) {
         loadUrl("javascript:SW9.setWidth(\"" + dm.widthPixels * 92 / 100 + "\")");
         loadUrl("javascript:SW9.start(\"" + "\")");
     }
 
-    public void stopWaveform()
+    public void stop()
     {
         loadUrl("javascript:SW9.stop(\"" + "\")");
 
@@ -64,15 +63,15 @@ public class WaveView extends WebView {
         loadUrl("file:///android_asset/voicewave.html");
     }
 
-    public void increaseWaveformAmplitude() {
+    public void speechStarted() {
         loadUrl("javascript:SW9.setAmplitude(\"" + 1 + "\")");
     }
 
-    public void decreaseWaveformAmplitude() {
+    public void speechEnded() {
         loadUrl("javascript:SW9.setAmplitude(\"" + 0.1 + "\")");
     }
 
-    public void minimizeWaveformAmplitude() {
+    public void speechPaused() {
         loadUrl("javascript:SW9.setAmplitude(\"" + 0.0 + "\")");
     }
 }

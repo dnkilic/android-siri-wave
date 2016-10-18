@@ -7,49 +7,41 @@ import android.view.View;
 
 import com.dnkilic.waveform.WaveView;
 
-
 public class MainActivity extends AppCompatActivity {
 
-    WaveView vw2;
-    float width;
+    private WaveView mWaveView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        vw2 = (WaveView) findViewById(R.id.vw2);
-
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        width = dm.widthPixels;
+        mWaveView = (WaveView) findViewById(R.id.vw2);
     }
 
-   public void stop(View v)
-   {
-       vw2.stopWaveform();
-   }
+    public void reset(View v)
+    {
+        mWaveView.stop();
+    }
 
     public void start(View v)
     {
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
-        vw2.startWaveform(dm);
+        mWaveView.initialize(dm);
     }
 
-    public void increase(View v)
+    public void startSpeech(View v)
     {
-        vw2.increaseWaveformAmplitude();
+        mWaveView.speechStarted();
     }
 
-    public void decrease(View v)
+    public void endSpeech(View v)
     {
-        vw2.decreaseWaveformAmplitude();
+        mWaveView.speechEnded();
     }
 
-    public void minimize(View v)
+    public void pauseSpeech(View v)
     {
-        vw2.minimizeWaveformAmplitude();
+        mWaveView.speechPaused();
     }
-
 }
