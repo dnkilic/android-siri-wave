@@ -1,8 +1,6 @@
 (function() {
 
-////////////////////
-// SiriWave9Curve //
-////////////////////
+/* This script is taken from https://github.com/caffeinalab/siriwavejs */
 
 function SiriWave9Curve(opt) {
 	opt = opt || {};

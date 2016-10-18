@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:waveview="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,14 +9,31 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@android:color/holo_purple"
-    android:orientation="vertical"
-    tools:context="com.dnkilic.androidjavascriptbrotherhood.MainActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2.6"
         android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DECREASE"
+            android:onClick="decrease" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INCREASE"
+            android:onClick="increase"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MINIMIZE"
+            android:onClick="minimize"/>
 
         <Button
             android:layout_width="match_parent"
@@ -34,71 +52,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.6"
-        android:orientation="vertical">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+Speed"
-            android:onClick="increaseSpeed"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="-Speed"
-            android:onClick="decreaseSpeed" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+Width"
-            android:onClick="increaseWidth"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="-Width"
-            android:onClick="decreaseWidth" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.6"
-        android:orientation="vertical">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="+Amplitude"
-            android:onClick="increaseAmplitude"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="-Amplitude"
-            android:onClick="decreaseAmplitude"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_weight="2">
-
-        <WebView
-            android:layout_width="match_parent"
+        <com.dnkilic.waveform.WaveView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:id="@+id/webView" />
-
+            waveview:deneme="true"
+            android:id="@+id/vw2">
+        </com.dnkilic.waveform.WaveView>
     </LinearLayout>
-
-
-
-
-
-
 </LinearLayout>

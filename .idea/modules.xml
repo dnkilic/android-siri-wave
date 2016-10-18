@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidJavascriptBrotherhood.iml" filepath="$PROJECT_DIR$/AndroidJavascriptBrotherhood.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-siri-wave.iml" filepath="$PROJECT_DIR$/android-siri-wave.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waveform/waveform.iml" filepath="$PROJECT_DIR$/waveform/waveform.iml" />
     </modules>
   </component>
 </project>
