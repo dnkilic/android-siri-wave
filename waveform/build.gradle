@@ -1,12 +1,5 @@
 apply plugin: 'com.android.library'
 
-ext {
-    PUBLISH_GROUP_ID = 'com.dnkilic.waveform'
-    PUBLISH_ARTIFACT_ID = 'library'
-    PUBLISH_VERSION = '0.9.0'
-}
-
-
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
@@ -25,8 +18,29 @@ android {
     }
 }
 
-apply from: 'https://raw.githubusercontent.com/dnkilic/android-siri-wave/master/android-release-aar.gradle'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'waveform'
 
+    publishedGroupId = 'com.dnkilic.waveform'
+    libraryName = 'library'
+    artifact = 'library'
+
+    libraryDescription = 'A library for apple iOS 9 siri like waveform on Android'
+
+    siteUrl = 'https://github.com/dnkilic/android-siri-wave'
+    gitUrl = 'https://github.com/dnkilic/android-siri-wave.git'
+
+    libraryVersion = '0.9.0'
+
+    developerId = 'dnkilic'
+    developerName = 'Doğan Kılıç'
+    developerEmail = 'dnkilic@outlook.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
