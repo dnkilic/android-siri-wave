@@ -24,3 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(path: ':waveform')
 }
+
+apply from: 'https://raw.githubusercontent.com/dnkilic/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/dnkilic/jcenter/master/bintrayv.gradle'
+

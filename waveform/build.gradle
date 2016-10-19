@@ -18,30 +18,6 @@ android {
     }
 }
 
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'waveform'
-
-    publishedGroupId = 'com.dnkilic.waveform'
-    libraryName = 'library'
-    artifact = 'library'
-
-    libraryDescription = 'A library for apple iOS 9 siri like waveform on Android'
-
-    siteUrl = 'https://github.com/dnkilic/android-siri-wave'
-    gitUrl = 'https://github.com/dnkilic/android-siri-wave.git'
-
-    libraryVersion = '0.9.0'
-
-    developerId = 'dnkilic'
-    developerName = 'Doğan Kılıç'
-    developerEmail = 'dnkilic@outlook.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
