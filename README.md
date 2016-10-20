@@ -34,9 +34,13 @@ dependencies {
 ```
 Methods:
 initialize(DisplayMetrics dm)
+
 speechStarted()
+
 speechEnded()
+
 speechPaused()
+
 stop()
 
 How to get DisplayMetrics in Activity
