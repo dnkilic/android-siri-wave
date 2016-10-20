@@ -43,6 +43,9 @@ speechPaused()
 
 stop()
 
-How to get DisplayMetrics in Activity
+To get DisplayMetrics in Activity
+
 DisplayMetrics dm = new DisplayMetrics();
+
 getWindowManager().getDefaultDisplay().getMetrics(dm);
+
