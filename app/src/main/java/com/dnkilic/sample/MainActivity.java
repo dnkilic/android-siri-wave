@@ -3,7 +3,7 @@ package com.dnkilic.sample;
 /*
 Copyright [2016] [Doğan Kılıç]
 
-Licensed under the Apache License, Version 2.0 (the "License");
+Licensed under the Apache License, Version 2.0 (the "License")
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -31,164 +31,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mWaveView = (WaveView) findViewById(R.id.vw2);
+        mWaveView = findViewById(R.id.vw2);
     }
 
-    public void reset(View v)
-    {
+    public void reset(View v) {
         mWaveView.stop();
     }
 
-    public void start(View v)
-    {
+    public void start(View v) {
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         mWaveView.initialize(dm);
     }
 
-    public void startSpeech(View v)
-    {
+    public void startSpeech(View v) {
         mWaveView.speechStarted();
     }
 
-    public void endSpeech(View v)
-    {
+    public void endSpeech(View v) {
         mWaveView.speechEnded();
     }
 
-    public void pauseSpeech(View v)
-    {
+    public void pauseSpeech(View v) {
         mWaveView.speechPaused();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
