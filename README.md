@@ -10,15 +10,15 @@ Android WebView which can act as iOS9 SiriWave
 
 The lib is available on jCentral, you can find it with [Gradle, please]
 
-```
-dependencies {
-    compile 'com.dnkilic.waveform:waveform:0.9.3'
-}
-```
+
+    dependencies {
+        compile 'com.dnkilic.waveform:waveform:0.9.3'
+    }
+
 ### Usage
 
-```
-<LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -31,7 +31,7 @@ dependencies {
             android:id="@+id/waveview">
         </com.dnkilic.waveform.WaveView>
     </LinearLayout>
-```
+
 Methods:
 initialize(DisplayMetrics dm)
 
