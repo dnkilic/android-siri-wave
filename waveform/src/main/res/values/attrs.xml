@@ -1,5 +1,0 @@
-<resources>
-    <declare-styleable name="WaveView">
-        <attr name="deneme" format="boolean" />
-    </declare-styleable>
-</resources>

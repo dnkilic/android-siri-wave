@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/dnkilic/android-siri-wave'
     gitUrl = 'https://github.com/dnkilic/android-siri-wave.git'
 
-    libraryVersion = '0.9.3'
+    libraryVersion = '0.9.4'
 
     developerId = 'dnkilic'
     developerName = 'Doğan Kılıç'
@@ -31,7 +31,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "0.9.4"
     }
     buildTypes {
         release {
@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
 }
 
 apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
