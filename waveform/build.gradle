@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/dnkilic/android-siri-wave'
     gitUrl = 'https://github.com/dnkilic/android-siri-wave.git'
 
-    libraryVersion = '0.9.4'
+    libraryVersion = '0.9.5'
 
     developerId = 'dnkilic'
     developerName = 'Doğan Kılıç'
@@ -31,7 +31,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName "0.9.4"
+        versionName "0.9.5"
     }
     buildTypes {
         release {
