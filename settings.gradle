@@ -1,1 +1,1 @@
-include ':app', ':waveform'
+include ':app', ':waveform', ':sample'
